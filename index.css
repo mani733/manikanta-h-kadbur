@@ -1,0 +1,556 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* font-family: "Noto Serif Khojki", serif; */
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    position: relative;
+}
+
+.nav>.active>a {
+    /* background-color: violet; */
+    color: #fff !important;
+    /* border-radius: 5px; */
+}
+
+/* pre-loading screen */
+#pre-loading {
+    background: #191225 url(images/clock-preloader.gif) no-repeat center center !important;
+    background-size: 25% !important;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+/* pre-loading screen ends */
+
+/* Additional class only when scrollvalue goes above 100px styling will be applied */
+.bgColors {
+    background: rgba(20, 20, 20, 0.5);
+    /* opacity: 0.4; */
+}
+
+/* Additional class ends */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 2.5rem;
+}
+
+body {
+    background-color: #171717 !important;
+}
+
+#mani {
+    margin-bottom: 0 !important;
+}
+
+.navbar-nav>li {
+    margin-right: 20px;
+}
+
+.navbar-nav,
+li,
+a {
+    color: #777777 !important;
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: #EAB308 !important;
+}
+
+/* home design */
+.myImage {
+    /* padding: 10px; */
+    border: 8px solid #EAB308;
+    border-radius: 20px;
+}
+
+.myPhoto {
+    width: 450px;
+    position: relative;
+    top: 20px;
+    right: 20px;
+    border-radius: 20px;
+    /* border: 2px solid green; */
+}
+
+.home-page {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.myIntro {
+    margin-right: 50px;
+}
+
+.greetings {
+    color: #EAB308;
+}
+
+.myBio {
+    color: #777777;
+}
+
+.contact-btn {
+    background-color: #EAB308 !important;
+    color: #000 !important;
+    text-decoration: none;
+}
+
+/* home design ends */
+
+/* About design */
+.aboutSection {
+    background-color: #0A0A0A;
+}
+
+.aboutImage {
+    /* padding: 20px; */
+    border: 8px solid #EAB308;
+    border-radius: 20px;
+}
+
+.aboutPhoto {
+    width: 350px;
+    position: relative;
+    bottom: 20px;
+    left: 20px;
+    border-radius: 20px;
+}
+
+.aboutPage {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.aboutIntro {
+    margin-left: 60px;
+}
+
+.aboutBio {
+    color: #777777;
+
+}
+
+.myName {
+    font-size: 45px;
+}
+
+/* About design ends */
+
+/* My Service Design */
+.myServiceSection {
+    height: 100vh;
+    color: #fff;
+    background-color: #171717 !important;
+}
+
+.myServiceHeading {
+    font-weight: bolder;
+}
+
+.serviceContent {
+    color: #777777;
+}
+
+.myServiceContent svg {
+    display: block;
+    width: auto;
+    margin: 0 auto;
+    color: #EAB308;
+}
+
+.myServiceContent {
+    padding: 40px;
+}
+
+.myServiceContent .card-text {
+    text-align: center;
+}
+
+.myServiceContent .col {
+    /* position: relative; */
+    /* width: 1100px;    */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* padding: 30px; */
+}
+
+.myServiceContent .card {
+    /* position: relative; */
+    max-width: 300px;
+    height: 200px;
+    background-color: #262626;
+    margin: 10px 10px;
+    padding: 10px 0px;
+
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+    border-radius: 15px;
+}
+
+.myServiceContent .card #iconsImages {
+    /* position: relative; */
+    /* top: 50px; */
+    width: 80px;
+    padding: 5px;
+    /* height: 200px; */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.myServiceContent .card .card-body {
+    /* position: relative; */
+    padding: 10px 15px;
+    color: #111;
+    text-align: center;
+    /* visibility: hidden; */
+    /* opacity: 0;
+    transition: 0.3s ease-in-out; */
+}
+
+.myServiceContent .card-title {
+    color: #fff;
+}
+
+.card-cont {
+    font-size: 12px;
+    color: #777777;
+}
+
+.myServiceContent .card:hover {
+    cursor: pointer;
+    width: 350px;
+    height: 215px;
+    background-color: #262626;
+    margin: 10px 10px;
+    padding: 10px 0px;
+    border: 5px solid #EAB308;
+}
+
+/* My Service Design Ends */
+
+/* Portfolio Section */
+.mySkills {
+    background-color: #0A0A0A;
+    color: #fff;
+    padding: 20px 0px;
+}
+
+.mySkills h2 {
+    font-weight: bolder;
+}
+
+/* Portfolio Section End */
+
+/* My skills & Languages */
+.skillLanguage {
+    display: flex;
+}
+
+.progress {
+    border: 1px solid #000;
+    height: 5px !important;
+    /* background-color: #777777 !important; */
+}
+
+input[type='checkbox'] {
+    accent-color: #EAB308;
+}
+
+.languages {
+    background-color: #262626;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+label {
+    /* float: right; */
+    margin-right: 3px;
+}
+
+.lang-name {
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid green; */
+}
+
+h4 {
+    text-decoration: underline;
+    color: #fff;
+    text-decoration-color: #EAB308;
+    font-weight: bolder;
+}
+
+/* My skills & Languages ends */
+
+/* Peoject & Experience */
+.ep {
+    background-color: #171717;
+    margin-top: 40px;
+}
+
+.exp-info,
+img {
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+    /* background-color: #0A0A0A; */
+}
+
+.desc li {
+    color: #777777 !important;
+}
+
+
+.exp-info,
+li {
+    color: #fff !important;
+    /* background-color: #262626 !important; */
+}
+
+.experience {
+    /* border: 2px solid green; */
+    /* box-shadow: 10px 0px 20px grey; */
+    padding: 2px;
+    background-color: #262626 !important;
+}
+
+#more,
+#more1,
+#more2,
+#more3,
+#more4 {
+    display: none;
+}
+
+.btns {
+    display: block !important;
+    width: auto;
+    margin: 0 auto;
+    background-color: #EAB308 !important;
+}
+
+.projects .card {
+    background-color: #262626 !important;
+}
+
+.projects .card,
+h5 {
+    color: #fff;
+}
+
+.projects .card .card-text {
+    color: #777777;
+}
+
+/* Peoject & Experience Ends */
+
+/* ConactMe Design */
+.contact-information {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contactInfo, .conatactForm{
+    width: 100%;
+}
+
+#linkedInId:hover{
+    text-decoration: underline !important;
+}
+
+input:focus {
+    border-color: #EAB308 !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgb(234,179,8, 0.6) !important;
+}
+
+textarea:focus {
+    border-color: #EAB308 !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgb(234,179,8, 0.6) !important;
+}
+
+.contactInfo{
+    color: #737373 !important;
+}
+
+.connectWithMe {
+    background-color: #0A0A0A !important;
+}
+
+.connectHeading {
+    color: #fff;
+    margin-top: 60px !important;
+    padding-top: 20px;
+}
+
+.connectWithMe .conatactForm, input, textarea {
+    background-color: #0A0A0A !important;
+    /* border: #0A0A0A; */
+}
+
+input,
+textarea {
+    border: 1px solid #EAB308 !important;
+    border-color: #262626 !important;
+}
+
+/* ConactMe Design ends */
+
+/* Footer Desgin */
+#footInfo span{
+    display: block;
+}
+/* Footer Desgin Ends */
+
+/* home Responsive design */
+@media only screen and (max-width:600px) {
+
+    #pre-loading {
+        background-size: 40% !important;
+    }
+
+    .nav {
+        display: block !important;
+    }
+
+    .home-page {
+        flex-wrap: wrap-reverse;
+        height: auto;
+    }
+
+    .myIntro {
+        /* text-align: center; */
+        margin-right: 0px;
+    }
+
+
+    .myImage {
+        display: block;
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .myPhoto {
+        width: 250px;
+    }
+
+    .greetings {
+        margin-top: 20px;
+    }
+
+    .myName {
+        font-size: 30px;
+    }
+
+    .contact-btn{
+        display: block !important;
+        width: fit-content !important;
+        margin: 0 auto !important;
+    }
+}
+
+/* home Responsive design ends */
+
+/* about Responsive design */
+@media only screen and (max-width:600px) {
+    .aboutPage {
+        flex-wrap: wrap-reverse;
+        display: block !important;
+        height: auto !important;
+    }
+
+    .aboutIntro h2{
+        margin-top: 40px;
+    }
+
+    .aboutIntro {
+        /* text-align: center; */
+        margin-left: 0px;
+    }
+
+    .aboutPhoto {
+        width: 200px;
+    }
+
+    .aboutImage {
+        display: block;
+        width: auto;
+        margin: 40px auto;
+    }
+}
+
+/* about Responsive design ends */
+
+/* myServiceSection Responsive design */
+
+@media only screen and (max-width: 600px) {
+    .myServiceSection {
+        height: auto !important;
+    }
+}
+
+/* myServiceSection Responsive design ends */
+
+/* myskills and Language Responsive design */
+
+@media only screen and (max-width: 600px) {
+    .skillLanguage {
+        flex-wrap: wrap;
+    }
+
+    .languages {
+        margin-top: 10px;
+    }
+}
+
+/* myskills and Language Responsive design ends */
+
+/* My Experice and project responsive design */
+
+@media only screen and (max-width: 600px) {
+    #pSecondCard {
+        margin-top: 10px !important;
+    }
+}
+
+/* My Experice and project responsive design Ends */
+
+/* Contact Me responsive desgin */
+
+@media only screen and (max-width: 600px) {
+    .contact-information{
+        display: block !important;
+    }
+}
+
+/* Contact Me responsive desgin ends */
+
+/* Footer Responsive */
+@media only screen and (max-width: 600px) {
+    #footInfo span{
+        display: inline;
+    }
+}
+/* Footer Responsive Ends */
